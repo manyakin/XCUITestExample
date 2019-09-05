@@ -35,13 +35,13 @@ extension XCLoginTS {
 }
 
 class XCLoginTS: XCScreen {
+    lazy var loginForm = navigate(Label.form)
     private lazy var logoImage = image(Label.logo)
     private lazy var alertAccept = button(Label.ok)
     private lazy var alertLogin = alert(Label.sign)
     private lazy var backButton = button(Label.back)
     private lazy var alertError = alert(Label.error)
     private lazy var saveButton = button(Label.save)
-    private lazy var loginForm = navigate(Label.form)
     private lazy var loginField = textfield(Label.login)
     private lazy var passwordField = password(Label.password)
 

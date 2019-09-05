@@ -47,6 +47,7 @@ extension XCFeedbackTS {
 }
 
 class XCFeedbackTS: XCScreen {
+    lazy var feedbackForm = navigate(Label.feedback)
     private lazy var saveButton = button(Label.save)
     private lazy var backButton = button(Label.back)
     private lazy var mailField = textfield(Label.mail)
@@ -54,7 +55,6 @@ class XCFeedbackTS: XCScreen {
     private lazy var phoneField = textfield(Label.phone)
     private lazy var feedbackAlert = app.alerts.firstMatch
     private lazy var messageField = textfield(Label.message)
-    private lazy var feedbackForm = navigate(Label.feedback)
     private lazy var feedbackAlertButton = button(Label.accept)
     private lazy var feedbackTable = app.otherElements.firstMatch
     private lazy var feedbackAlertText = statictext(Label.success)

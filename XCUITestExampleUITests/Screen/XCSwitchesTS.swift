@@ -24,9 +24,9 @@ extension XCSwitchesTS {
 }
 
 class XCSwitchesTS: XCScreen {
+    lazy var switchesFrom = navigate(Label.switches)
     private lazy var backButton = button(Label.back)
     private lazy var switches = app.switches.firstMatch
-    private lazy var switchesFrom = navigate(Label.switches)
     private lazy var segmentFirstButton = button(Label.first)
     private lazy var stepperDecrement = button(Label.decrement)
     private lazy var stepperIncrement = button(Label.increment)

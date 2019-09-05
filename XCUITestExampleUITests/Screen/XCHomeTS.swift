@@ -23,18 +23,21 @@ class XCHomeTS: XCScreen {
     func openLoginForm() {
         XCTContext.runActivity(named: "Переход на форму входа") { _ in
             tap(on: loginButton)
+            waitElement(expect: XCLoginTS().loginForm, time: 5)
         }
     }
     
     func openFeedbackForm() {
         XCTContext.runActivity(named: "Переход на форму обратной связи") { _ in
             tap(on: feedbackButton)
+            waitElement(expect: XCFeedbackTS().feedbackForm, time: 5)
         }
     }
     
     func openSwitchForm() {
         XCTContext.runActivity(named: "Переход на форму переключателей") { _ in
             tap(on: switchButton)
+            waitElement(expect: XCSwitchesTS().switchesFrom, time: 5)
         }
     }
     
