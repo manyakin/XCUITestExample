@@ -9,7 +9,7 @@
 
 #### 2. Run tests
 ```
-xcodebuild test clean -scheme XCUITestExampleUITests -derivedDataPath DerivedData/Data -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.1' -resultBundlePath DerivedData/Resultt
+xcodebuild test clean -scheme XCUITestExampleUITests -derivedDataPath DerivedData/Data -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.1' -resultBundlePath DerivedData/Result
 ```
 #### 3. Report generation 
 ```
